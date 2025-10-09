@@ -48,6 +48,10 @@
 	if(istype(AM, /obj/item/roguecoin) && isturf(loc)) // Only on floor
 		merge(AM, null)
 		return
+	if(istype(AM, /obj/item/roguecoin) && IN_STORAGE && istype(loc, /obj/item/storage/belt/rogue/pouch)) // only in pouches
+		merge(AM, null)
+		//remove_item_from_storage(null)
+		return
 
 /obj/item/roguecoin/get_real_price()
 	return sellprice * quantity
