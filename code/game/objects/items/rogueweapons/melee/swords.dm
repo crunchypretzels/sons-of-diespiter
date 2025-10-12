@@ -143,8 +143,8 @@
 //sword objs ฅ^•ﻌ•^ฅ
 
 /obj/item/rogueweapon/sword
-	name = "arming sword"
-	desc = "A long steel blade attached to a hilt, separated by a crossguard. The arming sword has been Psydonia's implement of war by excellence for generations."
+	name = "iron arming sword"
+	desc = "A long iron blade attached to a hilt, separated by a crossguard. The arming sword has been Psydonia's implement of war by excellence for generations, this one is cheaper than its steel brother."
 	slot_flags = ITEM_SLOT_HIP | ITEM_SLOT_BACK
 	force = 22
 	force_wielded = 25
@@ -152,7 +152,7 @@
 	gripped_intents = list(/datum/intent/sword/cut/arming, /datum/intent/sword/thrust/arming, /datum/intent/sword/strike, /datum/intent/sword/peel)
 	damage_deflection = 14
 	icon_state = "sword1"
-	sheathe_icon = "sword1"
+	sheathe_icon = "isword"
 	icon = 'icons/roguetown/weapons/swords32.dmi'
 	lefthand_file = 'icons/mob/inhands/weapons/rogue_lefthand.dmi'
 	righthand_file = 'icons/mob/inhands/weapons/rogue_righthand.dmi'
@@ -164,7 +164,7 @@
 	swingsound = BLADEWOOSH_MED
 	associated_skill = /datum/skill/combat/swords
 	max_blade_int = 200
-	max_integrity = 150
+	max_integrity = 100
 	wlength = WLENGTH_NORMAL
 	w_class = WEIGHT_CLASS_BULKY
 	pickup_sound = 'sound/foley/equip/swordlarge1.ogg'
@@ -174,9 +174,9 @@
 	thrown_bclass = BCLASS_CUT
 	//dropshrink = 0.75
 	anvilrepair = /datum/skill/craft/weaponsmithing
-	smeltresult = /obj/item/ingot/steel
-	minstr = 7
-	sellprice = 30
+	smeltresult = /obj/item/ingot/iron
+	minstr = 6
+	sellprice = 10
 	wdefense = 4
 	grid_width = 32
 	grid_height = 64
@@ -193,17 +193,17 @@
 		icon_state = "[rand_icon]"
 		sheathe_icon = "[rand_icon]"
 
-/obj/item/rogueweapon/sword/iron
-	name = "iron arming sword"
+/obj/item/rogueweapon/sword/steel
+	name = "steel arming sword"
 	desc = "A long iron blade attached to a hilt, separated by a crossguard. The arming sword has been Psydonia's implement of war by excellence for generations, this one is cheaper than its steel brother."
 	icon_state = "isword"
-	minstr = 6
-	smeltresult = /obj/item/ingot/iron
-	max_integrity = 100
-	sellprice = 10
-	sheathe_icon = "isword"
+	minstr = 7
+	smeltresult = /obj/item/ingot/steel
+	max_integrity = 150
+	sellprice = 30
+	sheathe_icon = "sword1"
 
-/obj/item/rogueweapon/sword/falx
+/obj/item/rogueweapon/sword/steel/falx
 	name = "falx"
 	desc = "An unusual type of curved sword that evolved from the farmer's sickle. It has an inwards edge, making it useful for cutting and chopping."
 	force = 22
@@ -215,13 +215,13 @@
 	minstr = 4
 	wdefense = 6
 
-/obj/item/rogueweapon/sword/decorated
+/obj/item/rogueweapon/sword/steel/decorated
 	name = "decorated arming sword"
 	desc = "A valuable ornate arming sword made for the purpose of ceremonial fashion, with a fine leather grip and a carefully engraved golden crossguard."
 	icon_state = "decsword1"
 	sellprice = 140
 
-/obj/item/rogueweapon/sword/decorated/Initialize()
+/obj/item/rogueweapon/sword/steel/decorated/Initialize()
 	. = ..()
 	var/rand_icon = "decsword[rand(1,3)]"
 	if(icon_state == "decsword1")
@@ -254,7 +254,7 @@
 	wdefense = 4
 	sellprice = 10
 
-/obj/item/rogueweapon/sword/long
+/obj/item/rogueweapon/sword/steel/long
 	name = "longsword"
 	desc = "A lethal and perfectly balanced weapon. The longsword is the protagonist of endless tales and myths all across Psydonia, seen in the hands of noblemen and an ever-decreasing quantity of master duelists.\
 		 It has great cultural significance in the empires of Grenzelhoft and Etrusca, where legendary swordsmen have created and perfected many fighting techniques of todae."
@@ -286,7 +286,7 @@
 	dropshrink = 0.75
 	smeltresult = /obj/item/ingot/steel
 
-/obj/item/rogueweapon/sword/long/training
+/obj/item/rogueweapon/sword/steel/long/training
 	name = "training sword"
 	desc = "Swords like these, with blunted tips and dull edges, are often used for practice without much risk of injury."
 	force = 5
@@ -298,12 +298,12 @@
 	throwforce = 5
 	thrown_bclass = BCLASS_BLUNT
 
-/obj/item/rogueweapon/sword/long/church
+/obj/item/rogueweapon/sword/steel/long/church
 	name = "see longsword"
 	desc = "The workhorse of the Holy See. Blades like this have drawn blood against the  old Infidels and the modern Inhumen heretics alike for centuries."
 	icon_state = "churchsword"
 
-/obj/item/rogueweapon/sword/long/undivided
+/obj/item/rogueweapon/sword/steel/long/undivided
 	name = "decablade"
 	desc = "With a drop of holy Eclipsum, doth the blade rise. Gilded, gleaming, radiant heat, warm my soul, immolate my enemies."
 	icon_state = "eclipsum"
@@ -311,7 +311,7 @@
 	force = 28
 	force_wielded = 33
 
-/obj/item/rogueweapon/sword/long/undivided/getonmobprop(tag)
+/obj/item/rogueweapon/sword/steel/long/undivided/getonmobprop(tag)
 	. = ..()
 	if(tag)
 		switch(tag)
@@ -410,12 +410,12 @@
 
 
 
-/obj/item/rogueweapon/sword/long/church
+/obj/item/rogueweapon/sword/steel/long/church
 	name = "see longsword"
 	desc = "The workhorse of the Holy See. Blades like this have drawn blood against the  old Infidels and the modern Inhumen heretics alike for centuries."
 	icon_state = "churchsword"
 
-/obj/item/rogueweapon/sword/long/undivided
+/obj/item/rogueweapon/sword/steel/long/undivided
 	name = "decablade"
 	desc = "With a drop of holy Eclipsum, doth the blade rise. Gilded, gleaming, radiant heat, warm my soul, immolate my enemies."
 	icon_state = "eclipsum"
@@ -423,7 +423,7 @@
 	force = 28
 	force_wielded = 33
 
-/obj/item/rogueweapon/sword/long/undivided/getonmobprop(tag)
+/obj/item/rogueweapon/sword/steel/long/undivided/getonmobprop(tag)
 	. = ..()
 	if(tag)
 		switch(tag)
@@ -521,10 +521,10 @@
 				)
 
 
-/obj/item/rogueweapon/sword/long/death
+/obj/item/rogueweapon/sword/steel/long/death
 	color = CLOTHING_BLACK
 
-/obj/item/rogueweapon/sword/long/getonmobprop(tag)
+/obj/item/rogueweapon/sword/steel/long/getonmobprop(tag)
 	. = ..()
 	if(tag)
 		switch(tag)
@@ -534,12 +534,12 @@
 			if("onbelt") return list("shrink" = 0.4, "sx" = -4, "sy" = -6, "nx" = 5, "ny" = -6, "wx" = 0, "wy" = -6, "ex" = -1, "ey" = -6, "nturn" = 100, "sturn" = 156, "wturn" = 90, "eturn" = 180, "nflip" = 0, "sflip" = 0, "wflip" = 0, "eflip" = 0, "northabove" = 0, "southabove" = 1, "eastabove" = 1, "westabove" = 0)
 			if("altgrip") return list("shrink" = 0.6,"sx" = 2,"sy" = 3,"nx" = -7,"ny" = 1,"wx" = -8,"wy" = 0,"ex" = 8,"ey" = -1,"northabove" = 0,"southabove" = 1,"eastabove" = 1,"westabove" = 0,"nturn" = -135,"sturn" = -35,"wturn" = 45,"eturn" = 145,"nflip" = 8,"sflip" = 8,"wflip" = 1,"eflip" = 0)
 
-/obj/item/rogueweapon/sword/long/etruscan
+/obj/item/rogueweapon/sword/steel/long/etruscan
 	name = "basket-hilted longsword"
 	desc = "An uncommon and elaborate type of longsword with a compound hilt like those seen on rapiers and smallswords. It has a marked unsharpened section for safe unarmored half-swording, and it's made of Calorian steel."
 	icon_state = "elongsword"
 
-/obj/item/rogueweapon/sword/long/frei		//Challenge weapon
+/obj/item/rogueweapon/sword/steel/long/frei		//Challenge weapon
 	name = "dueling longsword"
 	desc = "Fechtfeders are a type of training sword brought up by Grenzelhoft fencing guilds, their name - literally \"Feather\" - matches their construction; thinner, lighter, dull but more balanced - with a blade catcher to boot. Freifechters often modify them, giving them edges and a point for use in real dueling - this is one such example, and there's a reason they don't make it out of the fighting pit."
 	icon_state = "sharpfeder"
@@ -548,7 +548,7 @@
 	wdefense = 5		//+1
 	wbalance = WBALANCE_SWIFT
 
-/obj/item/rogueweapon/sword/long/zizo
+/obj/item/rogueweapon/sword/steel/long/zizo
 	name = "avantyne longsword"
 	desc = "A wicked, unconventional, and otherwordly blade that was created by no swordsmith - a manifestation of hate for the state of this world that follows no design principles but spite and anger."
 	icon_state = "zizosword"
@@ -558,11 +558,11 @@
 	equip_delay_self = 0
 	unequip_delay_self = 0
 
-/obj/item/rogueweapon/sword/long/zizo/Initialize()
+/obj/item/rogueweapon/sword/steel/long/zizo/Initialize()
 	. = ..()
 	AddComponent(/datum/component/cursed_item, TRAIT_CABAL, "SWORD")
 
-/obj/item/rogueweapon/sword/long/heirloom
+/obj/item/rogueweapon/sword/steel/long/heirloom
 	name = "old longsword"
 	desc = "A very old steel longsword that has since become a showpiece. Perhaps a family relic, or the weapon of a dead knight."
 	force = 20
@@ -572,7 +572,7 @@
 	icon_state = "heirloom"
 	sheathe_icon = "heirloom"
 
-/obj/item/rogueweapon/sword/long/heirloom/getonmobprop(tag)
+/obj/item/rogueweapon/sword/steel/long/heirloom/getonmobprop(tag)
 	. = ..()
 	if(tag)
 		switch(tag)
@@ -581,7 +581,7 @@
 			if("onback") return list("shrink" = 0.5, "sx" = -1, "sy" = 2, "nx" = 0, "ny" = 2, "wx" = 2, "wy" = 1, "ex" = 0, "ey" = 1, "nturn" = 0, "sturn" = 0, "wturn" = 70, "eturn" = 15, "nflip" = 1, "sflip" = 1, "wflip" = 1, "eflip" = 1, "northabove" = 1, "southabove" = 0, "eastabove" = 0, "westabove" = 0)
 			if("onbelt") return list("shrink" = 0.3, "sx" = -4, "sy" = -6, "nx" = 5, "ny" = -6, "wx" = 0, "wy" = -6, "ex" = -1, "ey" = -6, "nturn" = 100, "sturn" = 156, "wturn" = 90, "eturn" = 180, "nflip" = 0, "sflip" = 0, "wflip" = 0, "eflip" = 0, "northabove" = 0, "southabove" = 1, "eastabove" = 1, "westabove" = 0)
 
-/obj/item/rogueweapon/sword/long/judgement
+/obj/item/rogueweapon/sword/steel/long/judgement
 	name = "\"Judgement\""
 	desc = "An intricately forged longsword, it's blade is made from Aavnr's finest Vyšvou steel - held from an ornate carved ivory grip from the region's \"Mamük\" megafauna. A sight that's truly unique."
 	icon_state = "judgement"
@@ -591,7 +591,7 @@
 	sellprice = 363
 	static_price = TRUE
 
-/obj/item/rogueweapon/sword/long/judgement/getonmobprop(tag)
+/obj/item/rogueweapon/sword/steel/long/judgement/getonmobprop(tag)
 	. = ..()
 	if(tag)
 		switch(tag)
@@ -604,7 +604,7 @@
 			if("onbelt")
 				return list("shrink" = 0.4,"sx" = -4,"sy" = -6,"nx" = 5,"ny" = -6,"wx" = 0,"wy" = -6,"ex" = -1,"ey" = -6,"nturn" = 100,"sturn" = 156,"wturn" = 90,"eturn" = 180,"nflip" = 0,"sflip" = 0,"wflip" = 0,"eflip" = 0,"northabove" = 0,"southabove" = 1,"eastabove" = 1,"westabove" = 0)
 
-/obj/item/rogueweapon/sword/long/judgement/ascendant //meant to be insanely OP; solo antag wep
+/obj/item/rogueweapon/sword/steel/long/judgement/ascendant //meant to be insanely OP; solo antag wep
 	name = "\"The Redentor\""
 	desc = "An intricately forged sword of great power. And the preacher said: \"For the Lord is my tower, and He gives me the power to tear down the works of the enemy.\""
 	force = 50
@@ -620,7 +620,7 @@
 	max_integrity = 9999
 
 
-/obj/item/rogueweapon/sword/long/judgement/vlord
+/obj/item/rogueweapon/sword/steel/long/judgement/vlord
 	name = "\"Ichor Fang\""
 	desc = "An unholy longsword made of odd steel. A green crystalline mass covers the blade and pommel, its edges and serrations tougher and sharper than anything forged by a master swordsmith."
 	force = 40
@@ -636,7 +636,7 @@
 	equip_delay_self = 0
 	unequip_delay_self = 0
 
-/obj/item/rogueweapon/sword/long/marlin
+/obj/item/rogueweapon/sword/steel/long/marlin
 	name = "shalal saber"
 	desc = "A large yet surprisingly agile curved blade meant to be wielded in two hands. It has a similar composition to northwestern Psydonian longswords, but it's notably lighter."
 	force = 26
@@ -652,7 +652,7 @@
 	sellprice = 42
 	wdefense = 5
 
-/obj/item/rogueweapon/sword/long/marlin/getonmobprop(tag)
+/obj/item/rogueweapon/sword/steel/long/marlin/getonmobprop(tag)
 	. = ..()
 	if(tag)
 		switch(tag)
@@ -664,7 +664,7 @@
 				return list("shrink" = 0.5,"sx" = -4,"sy" = -6,"nx" = 5,"ny" = -6,"wx" = 0,"wy" = -6,"ex" = -1,"ey" = -6,"nturn" = 100,"sturn" = 156,"wturn" = 90,"eturn" = 180,"nflip" = 0,"sflip" = 0,"wflip" = 0,"eflip" = 0,"northabove" = 0,"southabove" = 1,"eastabove" = 1,"westabove" = 0)
 
 //Slightly more expensive than a longsword by 1 iron, so gets to be slightly better.
-/obj/item/rogueweapon/sword/long/exe
+/obj/item/rogueweapon/sword/steel/long/exe
 	name = "executioners sword"
 	desc = "A longsword with extra heft to its blade, reinforced."
 	possible_item_intents = list(/datum/intent/sword/cut, /datum/intent/sword/thrust, /datum/intent/sword/peel, /datum/intent/sword/strike)
@@ -678,7 +678,7 @@
 	penfactor = BLUNT_DEFAULT_PENFACTOR //Flat tip? I don't know, man. This intent is won't penetrate anything but it damages armor more.
 	intent_intdamage_factor = 1.3 //This is basically like getting hit by a mace.
 
-/obj/item/rogueweapon/sword/long/exe/astrata
+/obj/item/rogueweapon/sword/steel/long/exe/astrata
 	name = "\"Solar Judge\""
 	desc = "An incredibly unusual executioner's sword clad in gold and brass. Two separate blades protude outwards and join near its intricately decorated crossguard. This weapon calls for order."
 	icon_state = "astratasword"
@@ -686,7 +686,7 @@
 	possible_item_intents = list(/datum/intent/sword/cut, /datum/intent/sword/thrust, /datum/intent/sword/strike)
 	gripped_intents = list(/datum/intent/sword/cut, /datum/intent/sword/thrust, /datum/intent/sword/peel, /datum/intent/axe/chop)
 
-/obj/item/rogueweapon/sword/long/exe/getonmobprop(tag)
+/obj/item/rogueweapon/sword/steel/long/exe/getonmobprop(tag)
 	. = ..()
 	if(tag)
 		switch(tag)
@@ -697,26 +697,26 @@
 			if("onback")
 				return list("shrink" = 0.6,"sx" = -1,"sy" = 3,"nx" = -1,"ny" = 2,"wx" = 3,"wy" = 4,"ex" = -1,"ey" = 5,"nturn" = 0,"sturn" = 0,"wturn" = 70,"eturn" = 20,"nflip" = 1,"sflip" = 1,"wflip" = 1,"eflip" = 1,"northabove" = 1,"southabove" = 0,"eastabove" = 0,"westabove" = 0)
 
-/obj/item/rogueweapon/sword/long/exe/cloth
+/obj/item/rogueweapon/sword/steel/long/exe/cloth
 	icon_state = "terminusest"
 	name = "\"Terminus Est\""
 	desc = "An ancient and damaged executioner's sword, decorated with a bronze pommel and crossguard. A bloody rag winds around the ricasso, ever-present to keep the blade clean."
 
-/obj/item/rogueweapon/sword/long/exe/cloth/rmb_self(mob/user)
+/obj/item/rogueweapon/sword/steel/long/exe/cloth/rmb_self(mob/user)
 	user.changeNext_move(CLICK_CD_MELEE)
 	playsound(user, "clothwipe", 100, TRUE)
 	SEND_SIGNAL(src, COMSIG_COMPONENT_CLEAN_ACT, CLEAN_STRONG)
 	user.visible_message(span_warning("[user] wipes [src] down with its cloth."),span_notice("I wipe [src] down with its cloth."))
 	return
 
-/obj/item/rogueweapon/sword/long/oldpsysword
+/obj/item/rogueweapon/sword/steel/long/oldpsysword
 	name = "old psydonian longsword"
 	desc = "A finely made longsword, plated in a worn-down veneer of grubby silver. It's long seen better daes. Yet alike PSYDON, it ENDURES."
 	icon_state = "opsysword"
 	sheathe_icon = "opsysword"
 	dropshrink = 1
 
-/obj/item/rogueweapon/sword/long/psysword
+/obj/item/rogueweapon/sword/steel/long/psysword
 	name = "psydonian longsword"
 	desc = "A finely made longsword, plated in a ceremonial veneer of ornate silver - made for felling men and monsters alike.\
 		\"Psydon will deliver those who were mindful of Him to their place of ultimate triumph. No evil will touch them, nor will they grieve.\""
