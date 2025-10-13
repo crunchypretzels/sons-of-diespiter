@@ -1,5 +1,5 @@
 /datum/patron/old_god
-	name = "Psydon"
+	name = "Psydon, the Emperor"
 	domain = "Everything."
 	desc = "... </br>God. The manifestation of maximal good, and the father of all. </br>He, who created reality for His children to frollick within. </br>He, who breathed lyfe into the Pantheon to shepherd His virtues. </br>He, who sacrificed His strength to strike down the Archdevil with the Comet Syon. </br>He, who yet slumbers to this dae; and who may yet still return."
 	worshippers = "Traditionalists, Spiritualists, Extremists, Blessed Idiots, Sacrificial Heroes, and everyone in-between."
@@ -17,7 +17,7 @@
 		"REBUKE THE HEATHEN, SUNDER THE MONSTER!",
 		"WITH EVERY BROKEN BONE, I SWORE I LYVED!",
 		"FORGIVE THEM, ALLFATHER, FOR THEY KNOW-NOT WHAT THEY DO!",
-		"BARE WITNESS, MY GOD; THE SACRIFICE MADE MANIFEST!",
+		"BEAR WITNESS, MY GOD; THE SACRIFICE MADE MANIFEST!",
 	)
 
 
@@ -231,3 +231,26 @@
 
 	revert_cast()
 	return FALSE
+
+//////////////////////////////////
+// 	   TOGETHER, ONCE MORE.    //
+////////////////////////////////
+
+/obj/effect/proc_holder/spell/invoked/psydonrite
+	name = "WEEPER'S RITE"
+	desc = "Grants bonuses based on the faiths present; orthodoxist Psydonites will grant WIL, progressives CON, esoterics INT, and fatalists PER."
+	overlay_state = "ENDURE"
+	releasedrain = 20
+	chargedrain = 0
+	chargetime = 0
+	range = 2
+	warnie = "sydwarning"
+	movement_interrupt = FALSE
+	sound = 'sound/magic/ENDVRE.ogg'
+	invocations = list("LYVE, ENDURE!") // holy larp yelling for healing is silly
+	invocation_type = "none"
+	associated_skill = /datum/skill/magic/holy
+	antimagic_allowed = FALSE
+	recharge_time = 30 SECONDS
+	miracle = TRUE
+	devotion_cost = 40
