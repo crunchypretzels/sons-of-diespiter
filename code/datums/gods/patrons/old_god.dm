@@ -1,8 +1,8 @@
 /datum/patron/old_god
-	name = "Psydon"
-	domain = "Otava, Naledi, Rockhill, and most of Psydonia's outermost fiefs."
-	desc = "  </br>''God. The manifestation of maximal good, and the father of all.'' </br>''He, who created reality for His children to frollick within.'' </br>''He, who breathed lyfe into the Pantheon to shepherd His virtues.'' </br>''He, who sacrificed His strength to strike down the Archdevil with the Comet Syon.'' </br>''He, who yet slumbers to this dae; and who may yet still return.''"
-	worshippers = "Commonfolk, Zealots, Heroes, and the Esoteric."
+	name = "Myself"
+	domain = "What precious crumbs of the world I can take for myself."
+	desc = "I will set up my name in the place where the names of famous men are written, and where no man’s name is written yet I will raise a monument to the gods."
+	worshippers = "Those who have the will to carry on"
 	associated_faith = /datum/faith/old_god
 	mob_traits = list(TRAIT_PSYDONIAN_GRIT) //Assigned to all mobs with Psydon as the chosen patron. Gives a Willpower-scaling chance to resist succumbing to pain.
 	miracles = list(/obj/effect/proc_holder/spell/targeted/touch/orison			= CLERIC_ORI,

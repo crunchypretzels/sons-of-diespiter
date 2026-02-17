@@ -1,5 +1,5 @@
 /datum/patron/divine/necra
-	name = "Necra"
+	name = "NYI"
 	domain = "Goddess of Death and the Afterlife"
 	desc = "Veiled Lady of the underworld, equally feared and respected by mortals. She taught mortals the inevitability of death and cares for them as they reach the afterlife."
 	worshippers = "The Dead, Mourners, Gravekeepers"

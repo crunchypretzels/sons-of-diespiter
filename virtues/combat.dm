@@ -1,8 +1,8 @@
 // Arcyne Potential now gives 3 Spellpoints instead of 6 spellpoints so it is less of a "must take" for caster.
 /datum/virtue/combat/magical_potential
-	name = "Arcyne Potential"
-	desc = "I am talented in the Arcyne arts, expanding my capacity for magic. I have become more intelligent from its studies. Other effects depends on what training I chose to focus on at a later age."
-	custom_text = "Classes that has a combat trait (Medium / Heavy Armor Training, Dodge Expert or Critical Resistance) get only prestidigitation. Everyone else get +3 spellpoints and T1 Arcyne Potential if they don't have any Arcyne."
+	name = "Blank"
+	desc = "Psychics find my presence difficult to handle, and I am resistant to their abilities."
+	custom_text = "Sponsorcery is unaffected."
 	added_skills = list(list(/datum/skill/magic/arcane, 1, 6))
 
 /datum/virtue/combat/magical_potential/apply_to_human(mob/living/carbon/human/recipient)
@@ -84,9 +84,9 @@
 	recipient.adjust_skillrank_up_to(/datum/skill/combat/shields, SKILL_LEVEL_JOURNEYMAN, silent = TRUE)
 
 /datum/virtue/combat/executioner
-	name = "Dungeoneer's Apprentice"
-	desc = "I was set to be a dungeoneer some time ago, and I was taught by one. I have an axe and whip stashed away, should the need arise."
-	custom_text = "Guaranteed Journeyman for Axes & Whips/Flails."
+	name = "Shotgun Savvy"
+	desc = "I've always considered myself something of an expert in the art of blasting. I rack shotguns faster, and can handle the recoil better than most."
+	custom_text = "Guaranteed Journeyman for Shotguns."
 	added_stashed_items = list("Axe" = /obj/item/rogueweapon/stoneaxe/woodcut,
 								"Whip" = /obj/item/rogueweapon/whip)
 

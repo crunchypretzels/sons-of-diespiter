@@ -112,7 +112,7 @@
 /// GOD-FEARING
 
 /datum/charflaw/addiction/godfearing
-	name = "Devout Follower"
+	name = "Apparatchik"
 	desc = "I need to pray to my Patron in their realm, it will make me and my prayers stronger."
 	time = 40 MINUTES
 	needsate_text = "Time to pray to my Patron."

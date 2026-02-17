@@ -1,6 +1,6 @@
 /datum/patron/inhumen/zizo
-	name = "Zizo"
-	domain = "Progress, Undeath, Hubris, Left Hand Magicks"
+	name = "United Solar Nations"
+	domain = "For all mankind."
 	desc = "A once-mortal snow elf turned god. Her hubris in thinking she could harvest lux from the planet itself led to the elimination of her entire race. Her works are still used to this dae in some cases."
 	worshippers = "Necromancers, Researchers, Warlocks, and the Undead"
 	mob_traits = list(TRAIT_CABAL, TRAIT_ZIZOSIGHT)

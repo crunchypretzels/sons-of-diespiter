@@ -1,7 +1,7 @@
 /datum/patron/divine/dendor
-	name = "Dendor"
-	domain = "God of the Earth and Nature"
-	desc = "The God of Wilds, born from Abyssor's feverish dreams. Spilt forth life from the oceans to land in a wild craze. The Father of Ground-Lyfe. Treefather."
+	name = "Dryad Agriengineering"
+	domain = "Good to grow."
+	desc = "Touch a tree. What do you feel? The crevices of the wood? The sticky sap that runs down the bark? We are the buzzing of bees in the branches, the wave of the leaves in the breeze. Nature itself has been bent to our cause."
 	worshippers = "Druids, Beasts, Madmen"
 	mob_traits = list(TRAIT_KNEESTINGER_IMMUNITY, TRAIT_LEECHIMMUNE)
 	miracles = list(/obj/effect/proc_holder/spell/targeted/touch/orison			= CLERIC_ORI,

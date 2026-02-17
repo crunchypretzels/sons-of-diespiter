@@ -1,8 +1,7 @@
 /datum/faith/divine
-	name = "Divine Pantheon"
-	desc = "The TEN, holy and eternal. The most accepted religion in Azure Peak. The TEN became active in the lives of mortals after Psydon sent the Comet Syon to defeat the rampaging Archdevil and vanished from the world. \n \n\
-		The <b>Holy See</b>, recently rocked by a violent schism, controls dioceses across the world. \
-		The splinter church, the <b>Holy Ecclesial</b>, recognize the heretical 'Ascendants' - better known as INHUMEN GODS- as True Divinity. \
-		But it is only through faith of the TRUE DIVINE that hope can be found in this world."
-	worshippers = "Citizens of Azure Peak, conservative religious-folk, many commonfolk."
+	name = "ISSE Top 10"
+	desc = "The Inner Sphere Stock Exchange Top Ten are the most powerful megacorporate influencers in the Inner Sphere, constituting the economic elite of the United Solar Nations. \
+	Their exceptional power over state affairs- and exceptional wealth to wield in pursuit of greater power yet- gives them near-immunity to prosecution, provided they act through intermediary \
+	agents... such as yourself."
+	worshippers = "The Ambitious, the Power-Hungry, and the Opportunistic."
 	godhead = /datum/patron/divine/astrata

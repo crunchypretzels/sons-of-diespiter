@@ -1,7 +1,7 @@
 /datum/patron/divine/malum
-	name = "Malum"
-	domain = "God of Fire, Destruction and Rebirth"
-	desc = "Opinionless god of the crafts. He teaches that great works for killing or saving are great works, either way. The well-oiled guillotine and the well-sharpened axe are tools, and there is no good and evil to their craft."
+	name = "CICADA"
+	domain = "Build it."
+	desc = "THE FLAME EATS THE CANDLE AND THE CANDLE FEEDS THE FLAME AND THE CANDLE IS NOTHING WITHOUT THE FLAME AND THE FLAME IS NOTHING WITHOUT THE CANDLE."
 	worshippers = "Smiths, Miners, Engineers"
 	mob_traits = list(TRAIT_FORGEBLESSED, TRAIT_BETTER_SLEEP)
 	miracles = list(/obj/effect/proc_holder/spell/targeted/touch/orison			= CLERIC_ORI,

@@ -1,5 +1,5 @@
 /datum/patron/inhumen/baotha
-	name = "Baotha"
+	name = "\[BLACKGUARD\]"
 	domain = "Goddess of Hedonism, Addiction, Anguish, and Heartbreak"
 	desc = "The twin sister of Eora, fallen to disgrace. She brings comfort to those who can't find it elsewhere but the bottom of a bottle; and she tempts those who have lost much into her fold through offers of relief and pleasure, yet they soon find themselves unable to escape her grasp. Seen as a scorned lover by many, and followed by such."
 	worshippers = "Widows, Gamblers, Addicts, and Scorned Lovers"

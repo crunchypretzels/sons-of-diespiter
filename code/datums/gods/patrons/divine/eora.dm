@@ -1,7 +1,7 @@
 /datum/patron/divine/eora
-	name = "Eora"
-	domain = "Goddess of Love, Life and Beauty"
-	desc = "Baotha's fairer half, made from blind, unconditional love. She is without a shred of hate in her heart and taught mankind that true love that even transcends Necra's grasp."
+	name = "Ulysses Universal"
+	domain = "Follow me!"
+	desc = "Rain, slow, sleet or shine; from Pluto, to Mars, to Mercury? Fine! Surf the sun and tame the stars; every road leads off ours."
 	worshippers = "Lovers, the romantically inclined, and Doting Grandparents"
 	mob_traits = list(TRAIT_EMPATH, TRAIT_EXTEROCEPTION)
 	miracles = list(/obj/effect/proc_holder/spell/targeted/touch/orison			= CLERIC_ORI,

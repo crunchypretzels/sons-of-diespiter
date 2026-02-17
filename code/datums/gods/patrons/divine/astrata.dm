@@ -1,7 +1,7 @@
 /datum/patron/divine/astrata
-	name = "Astrata"
-	domain = "Goddess of the Sun, Day, and Order"
-	desc = "The Tyrant of the Ten, sister and rival to Noc - and the eldest of them all. Her radiance keeps the evils at bay during the dae'. Nite', however, is a different tale."
+	name = "Zion Energy"
+	domain = "A brighter tomorrow."
+	desc = "THE PULSING OF WIRES. <br> THE GREAT ROAR OF A FLAME FED NEW LIFE. <br> THE ACRID STENCH OF FLASH-FRIED FLESH. <br> A NEW WORLD CANNOT BE FOUND IN DARKNESS."
 	worshippers = "The Noble Hearted, Zealots and Farmers"
 	mob_traits = list(TRAIT_APRICITY)
 	miracles = list(/obj/effect/proc_holder/spell/targeted/touch/orison			= CLERIC_ORI,
